@@ -16,9 +16,7 @@ function changeBox() {
     boxes.forEach(box => {
       box.style.transform = 'rotate(-90deg)';
       setTimeout(() => {
-        // const img = document.querySelector('.img');
         box.remove();
-        // img.remove();
         main.appendChild(bigBox);
       }, 200)
     });
@@ -40,7 +38,6 @@ function createBoxes() {
 }
 
 // background position
-
 function insertGif() {
 
   const boxes = document.querySelectorAll('.small-box');
@@ -48,9 +45,7 @@ function insertGif() {
 
     posX = box.offsetLeft - boxes[0].offsetLeft;
     posY = box.offsetTop - boxes[0].offsetTop;
-    console.log(posX, posY)
 
     box.style.backgroundPosition = `-${posX}px -${posY}px`
-    // box.style.transform = 'rotate(360deg)';
   })
 }
