@@ -35,7 +35,6 @@ body {
 .small-box {
     background: url(https://media.giphy.com/media/HQd7OukWXdjnq/giphy.gif);
     background-size: 540px 540px;
-    background-attachment: fixed;
     width: 120px;
     height: 120px;
     margin: 10px;
